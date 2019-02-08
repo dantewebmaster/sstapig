@@ -1,0 +1,25 @@
+{
+  "name": "sstapig",
+  "version": "0.5.0",
+  "description": "SSTAPIG - Starter Swagger Tools Api Generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "API",
+    "CLI",
+    "Generator",
+    "Swagger"
+  ],
+  "author": "Dante Webmaster",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.2",
+    "simple-git": "^1.107.0",
+  }
+}
