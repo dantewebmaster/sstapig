@@ -12,11 +12,6 @@ console.log(
   )
 );
 
-if (files.directoryExists('.git')) {
-  console.log(chalk.red('Already a git repository!'));
-  process.exit();
-}
-
 const run = async () => {
   let projectInfos = await inquirer.askProjectInfos();
   let clonedRepo;
