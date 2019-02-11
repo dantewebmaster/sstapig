@@ -1,10 +1,10 @@
 {
   "name": "sstapig",
-  "version": "0.5.0",
+  "version": "0.5.6",
   "description": "SSTAPIG - Starter Swagger Tools Api Generator",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "bin": {
+    "gen-api": "./index.js"
   },
   "keywords": [
     "API",
@@ -20,6 +20,8 @@
     "clui": "^0.3.6",
     "figlet": "^1.2.1",
     "inquirer": "^6.2.2",
-    "simple-git": "^1.107.0",
+    "node-cmd": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "simple-git": "^1.107.0"
   }
 }

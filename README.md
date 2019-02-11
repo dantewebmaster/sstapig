@@ -3,4 +3,4 @@ Tool created to generate the process of create the starter Api structure for a S
 
 
 ## Changelog
-v0.5.0 - Initial version in dev.
+v0.5.5 - Initial version in dev.

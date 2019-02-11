@@ -1,1 +1,8 @@
 node_modules
+*.log
+
+# VS Code
+.vscode/
+
+package-lock.json
+yarn.lock
