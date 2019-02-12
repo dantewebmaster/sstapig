@@ -1,6 +1,6 @@
 {
   "name": "sstapig",
-  "version": "0.5.6",
+  "version": "1.0.0",
   "description": "SSTAPIG - Starter Swagger Tools Api Generator",
   "main": "index.js",
   "bin": {
