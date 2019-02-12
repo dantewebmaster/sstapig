@@ -21,7 +21,7 @@ const run = async () => {
   }
 
   console.log(
-    chalk.blue(`Project created on: ${__dirname + '\\' + projectName} and all dependencies installed.\n`)
+    chalk.blue(`Project created on: ${__dirname + '\\' + projectSlug} and all dependencies installed.\n`)
   );
   console.log(
     chalk.white('Next steps: \n Install a BD manager (pg, mysql2, sqlite3...) \n Update the config file. \n Be happy \\o/ ')
