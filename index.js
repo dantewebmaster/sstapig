@@ -1,13 +1,10 @@
 #!/usr/bin/env node
-const chalk = require('chalk');
-const clear = require('clear');
 const figlet = require('figlet');
+const chalk = require('chalk');
 const inquirer = require('./lib/inquirer');
 const commands = require('./lib/commands');
-const github = require('./lib/github');
-const path = require('path');
 
-clear();
+commands.clearConsole();
 console.log(
   chalk.yellow(
     figlet.textSync('SSTAPIG', { horizontalLayout: 'full' })
@@ -19,15 +16,15 @@ const run = async () => {
   const { projectSlug, projectName } = projectInfos;
 
   if (projectInfos) {
-    await github.cloneGitRepo(projectSlug);
+    await commands.cloneGitRepo(projectSlug);
     await commands.installDependencies(projectInfos);
   }
 
   console.log(
-    chalk.blue(`Project created on: ${projectName} and all dependencies installed.\n`)
+    chalk.blue(`Project created on: ${__dirname + '\\' + projectName} and all dependencies installed.\n`)
   );
   console.log(
-    chalk.white('Next steps: Install a BD manager (pg, mysql2, sqlite3...) and update the config file.')
+    chalk.white('Next steps: \n Install a BD manager (pg, mysql2, sqlite3...) \n Update the config file. \n Be happy \\o/ ')
   );
 }
 
