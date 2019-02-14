@@ -13,7 +13,7 @@ console.log(
 
 const run = async () => {
   const projectInfos = await inquirer.askProjectInfos();
-  const { projectSlug, projectName } = projectInfos;
+  const { projectDirectory, pkgManager } = projectInfos;
 
   if (projectInfos) {
     await commands.cloneGitRepo(projectSlug);
@@ -21,10 +21,10 @@ const run = async () => {
   }
 
   console.log(
-    chalk.blue(`Project created on: ${__dirname + '\\' + projectSlug} and all dependencies installed.\n`)
+    chalk.blue(`All done! now run cd ${projectDirectory} and ${pkgManager} start to start working on your new API =)\n`)
   );
   console.log(
-    chalk.white('Next steps: \n Install a BD manager (pg, mysql2, sqlite3...) \n Update the config file. \n Be happy \\o/ ')
+    chalk.white('Do not forget to \n Install a BD manager (pg, mysql2, sqlite3...) \n Update the config file. \n Be happy \\o/ ')
   );
 }
 
