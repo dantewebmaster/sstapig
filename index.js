@@ -16,7 +16,7 @@ const run = async () => {
   const { projectDirectory, pkgManager } = projectInfos;
 
   if (projectInfos) {
-    await commands.cloneGitRepo(projectSlug);
+    await commands.cloneGitRepo(projectDirectory);
     await commands.installDependencies(projectInfos);
   }
 
